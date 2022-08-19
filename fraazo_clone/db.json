@@ -1,0 +1,232 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FCOC1.png?width=256&height=256",
+      "name": "Coconut",
+      "quantity": "1 pc",
+      "price": "27",
+      "type": "fresh"
+    },
+    {
+      "id": 2,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FBAN14.png?width=256&height=256",
+      "name": "Robusta Banana",
+      "quantity": "1 kg",
+      "quantity2": "6 - 9 pc",
+      "price": "46",
+      "type": "fresh"
+    },
+    {
+      "id": 3,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/092/original/data?width=256&height=256",
+      "name": "Papaya (Papita)",
+      "quantity": "1 pc",
+      "quantity2": "600 - 900 g",
+      "price": "44",
+      "type": "fresh"
+    },
+    {
+      "id": 4,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FMOS13.png?width=256&height=256",
+      "name": "Mausambi (Sweet Lime)",
+      "quantity": "1 kg",
+      "price": "74",
+      "type": "fresh"
+    },
+    {
+      "id": 5,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/117/original/data?width=256&height=256",
+      "name": "Watermelon",
+      "quantity": "1pc",
+      "quantity2": "1 - 2.5 kg",
+      "price": "60",
+      "delprice": "17"
+    },
+    {
+      "id": 6,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FMUS1.png?width=256&height=256",
+      "name": "Muskmelon",
+      "quantity": "1pc",
+      "quantity2": "652 - 1200 g",
+      "price": "45",
+      "type": "fresh"
+    },
+    {
+      "id": 7,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/231/original/data?width=256&height=256",
+      "name": "Sun lemon",
+      "quantity": "1pc",
+      "quantity2": "652 - 1000 g",
+      "price": "31",
+      "type": "fresh"
+    },
+    {
+      "id": 8,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FAPP23.png?width=256&height=256",
+      "name": "Methi (Fenugreek Leaves)",
+      "quantity": "100 g",
+      "price": "11",
+      "type": "fresh"
+    },
+    {
+      "id": 9,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/257/original/data?width=256&height=256",
+      "name": "Nariyal Pani",
+      "quantity": "1pc",
+      "price": "63",
+      "type": "fresh"
+    },
+    {
+      "id": 10,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/369/original/data?width=256&height=256",
+      "name": "Guava",
+      "quantity": "2 pc",
+      "quantity2": "600 - 800 g",
+      "price": "76",
+      "type": "fresh"
+    },
+    {
+      "id": 11,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/160/original/data?width=256&height=256",
+      "name": "Shimla Apple",
+      "quantity": "4pc",
+      "quantity2": "600 - 800 g",
+      "price": "75",
+      "type": "fresh"
+    },
+    {
+      "id": 12,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FAPP23.png?width=256&height=256",
+      "name": "Green Apple",
+      "quantity": "4pc",
+      "price": "218",
+      "type": "fresh"
+    },
+    {
+      "id": 13,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/338/original/data?width=256&height=256",
+      "name": "Orange",
+      "quantity": "2 pc",
+      "price": "79",
+      "type": "fresh"
+    },
+    {
+      "id": 14,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FKIW1.png?width=256&height=256",
+      "name": "Zespri Golden Kiwi",
+      "quantity": "1 pkt",
+      "quantity2": "3pcs",
+      "price": "139",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 15,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FAVO21.png?width=256&height=256",
+      "name": "Indian Avocado",
+      "quantity": "1 pc",
+
+      "price": "73",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 16,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/432/original/data?width=256&height=256",
+      "name": "Grape Fruit",
+      "quantity": "1 pc",
+
+      "price": "79",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 17,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/235/original/data?width=256&height=256",
+      "name": "Importes Avocado",
+      "quantity": "1 pc",
+      "quantity2": "3pcs",
+      "price": "83",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 18,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/243/original/data?width=256&height=256",
+      "name": "Pear Beauty",
+      "quantity": "500g",
+      "quantity2": "3pcs",
+      "price": "127",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 19,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FDRA1.png?width=256&height=256",
+      "name": "Dragon Fruit",
+      "quantity": "1 pc",
+      "quantity2": "3pcs",
+      "price": "77",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 20,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FBLU1.png?width=256&height=256",
+      "name": "Blueberry",
+      "quantity": "1 pkt",
+      "quantity2": "125g",
+      "price": "199",
+      "type": "Exotic Fruits"
+    },
+    {
+      "id": 21,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/204/original/data?width=256&height=256",
+      "name": "Cooler Fruit Combo (1 pc Watermelon + 1 pc Papaya)",
+      "quantity": "1 combo",
+      "quantity2": "125g",
+      "price": "104",
+      "type": "Fruit Combos"
+    },
+    {
+      "id": 22,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FC004.png?width=512&height=512",
+      "name": "Fruit Juice Combo",
+      "quantity": "1 combo",
+      "quantity2": "125g",
+      "price": "149",
+      "type": "Fruit Combos"
+    },
+    {
+      "id": 23,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/445/original/data?width=256&height=256",
+      "name": "Coconut Combo (2 pcs Coconuts)",
+      "quantity": "1 comb",
+      "quantity2": "54",
+      "price": "199",
+      "type": "Fruit Combos"
+    },
+    {
+      "id": 24,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/244/original/data?width=256&height=256",
+      "name": "Tasty Combo (4Pcs Royal Gala Apple + 1Kg Robusta Banana)",
+      "quantity": "1 Combo",
+      "quantity2": "125g",
+      "price": "170",
+      "type": "Fruit Combos"
+    },
+    {
+      "id": 25,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/447/original/data?width=512&height=512",
+      "name": "Shubh Combo (Red Delicious Apple, Robusta Banana, Coconut)",
+      "quantity": "1 combo",
+      "quantity2": "125g",
+      "price": "225",
+      "type": "Fruit Combos"
+    },
+    {
+      "id": 26,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/442/original/data?width=256&height=256",
+      "name": "Smoothie Combo (1 kg Robusta Banana + 1 pkt Blueberry)",
+      "quantity": "1 combo",
+      "quantity2": "125g",
+      "price": "260",
+      "type": "Fruit Combos"
+    }
+  ]
+}
