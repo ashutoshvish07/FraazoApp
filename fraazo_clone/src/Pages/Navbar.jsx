@@ -23,6 +23,7 @@ import { BsCart3, BsCreditCard } from "react-icons/bs";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link as ReachLink } from "react-router-dom";
+import Filter2 from "./Filter2";
 
 const Links = [
   {
@@ -157,6 +158,8 @@ const Navbar = () => {
           </Stack>
         </Box>
       ) : null}
+
+      <Filter2/>
     </Box>
   );
 };

@@ -228,5 +228,227 @@
       "price": "260",
       "type": "Fruit Combos"
     }
+  ],
+  "Vegitables": [
+    {
+      "id": 1,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VCAB12.png?width=256&height=256",
+      "name": "Cabbage",
+      "quantity": "1 kg",
+      "price": "22",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 2,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VLAD12.png?width=256&height=256",
+      "name": "lady's Finger",
+      "quantity": "250 g",
+      "price": "18",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 3,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/images/images/000/006/605/original/data?width=256&height=256",
+      "name": "Tomato",
+      "quantity": "1 kg",
+      "price": "28",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 4,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/BONI11.png?width=256&height=256",
+      "name": "Onion",
+      "quantity": "1 kg",
+      "price": "22",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 5,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VCAP12.png?width=256&height=256",
+      "name": "Green Capsicumn",
+      "quantity": "250 g",
+      "price": "16",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 6,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/ESWE13.png?width=256&height=256",
+      "name": "Sweet Corn (Bhutta)",
+      "quantity": "1 pc",
+      "quantity2": "200 400 g",
+      "price": "17",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 7,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VDRU12.png?width=256&height=256",
+      "name": "Drumstick",
+      "quantity": "100 g",
+      "price": "9",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 8,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/028/original/data?width=256&height=256",
+      "name": "Bringel",
+      "quantity": "250 g",
+      "price": "21",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 9,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VFRE12.png?width=256&height=256",
+      "name": "Frech Beans",
+      "quantity": "500 g",
+      "price": "78",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 10,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VPAD12.png?width=256&height=256",
+      "name": "Parwal",
+      "quantity": "250 g",
+      "price": "35",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 11,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/FCAR1.png?width=256&height=256",
+      "name": "Orange carrot",
+      "quantity": "500 g",
+      "price": "44",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 12,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VLAD12.png?width=256&height=256",
+      "name": "lady's Finger",
+      "quantity": "250 g",
+      "price": "18",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 13,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VSWE12.png?width=256&height=256",
+      "name": "Sweet Potato",
+      "quantity": "500 g",
+      "price": "50",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 14,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/599/original/data?width=256&height=256",
+      "name": "Disco Pampkin",
+      "quantity": "250 g",
+      "price": "18",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 15,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VTIN12.png?width=256&height=256",
+      "name": "Tinda",
+      "quantity": "250 g",
+      "price": "31",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 16,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VPEA11.png?width=256&height=256",
+      "name": "Matar",
+      "quantity": "500 g",
+      "price": "99",
+      "type": "Daily Veggies"
+    },
+    {
+      "id": 17,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/EMUS2.png?width=256&height=256",
+      "name": "Mushroom",
+      "quantity": "1 pkt",
+      "price": "99",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 18,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/EBAB12.png?width=256&height=256",
+      "name": "Baby Corn",
+      "quantity": "200 g",
+      "price": "33",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 19,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/ELET22.png?width=256&height=256",
+      "name": "Lttuce Iceburg",
+      "quantity": "1 pc",
+      "quantity2": "(600 - 800 g)",
+      "price": "39",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 20,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/images/images/000/008/449/original/data?width=256&height=256",
+      "name": "Lotus Stem",
+      "quantity": "500 g",
+      "price": "74",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 21,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/EZUC12.png?width=256&height=256",
+      "name": "Green Zucchini",
+      "quantity": "1 pc",
+      "quantity2": "200 -500 g",
+      "price": "54",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 22,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/EZUC32.png?width=256&height=256",
+      "name": "Yellow Zucchini",
+      "quantity": "1 pc",
+      "quantity2": "300 - 500 g",
+      "price": "59",
+      "type": "Exotic Vegetables"
+    },
+    {
+      "id": 23,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VCHI22.png?width=256&height=256",
+      "name": "Green Chilles",
+      "quantity": "100 g",
+      "price": "12",
+      "type": "Herbs & Leafies"
+    },
+    {
+      "id": 24,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/003/250/original/data?width=256&height=256",
+      "name": "Lemon",
+      "quantity": "100 g",
+      "price": "17",
+      "type": "Herbs & Leafies"
+    },
+    {
+      "id": 25,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/VGAR12.png?width=256&height=256",
+      "name": "garlic",
+      "quantity": "100 g",
+      "price": "10",
+      "type": "Herbs & Leafies"
+    },
+    {
+      "id": 26,
+      "image": "https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/506/original/data?width=256&height=256",
+      "name": "Betel leaf",
+      "quantity": "6 pcs",
+      "price": "12",
+      "type": "Herbs & Leafies"
+    },
+    {
+      "id": 27,
+      "image": "https://imagemaster.fraazo.com/fraazo-master/products/LMIN11.png?width=256&height=256",
+      "name": "Mint Leaf",
+      "quantity": "100 g",
+      "price": "35",
+      "type": "Herbs & Leafies"
+    }
   ]
 }
