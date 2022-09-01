@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+// import "../App.css"
 import {
   Box,
   Flex,
@@ -23,7 +24,13 @@ import { BsCart3, BsCreditCard } from "react-icons/bs";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link as ReachLink } from "react-router-dom";
-import Filter2 from "./Filter2";
+import Filter2 from "../Components/Filter2";
+import { useDispatch } from "react-redux";
+import {
+  getFruitsData,
+  QueryFruitsData,
+  QueryVegitableData,
+} from "../Redux/AppReducer/action";
 
 const Links = [
   {
@@ -44,9 +51,25 @@ const Links = [
 ];
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+
+  const [query, setQuery] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+    dispatch(QueryFruitsData(query));
+    // dispatch(QueryVegitableData(query));
+  };
+
+  console.log(query);
   return (
-    <Box bg={useColorModeValue("white.100", "gray.900")} px={4} py={2}>
+    <Box
+      bg={useColorModeValue("white.100", "gray.900")}
+      px={4}
+      py={2}
+      className="Navbar_sticly"
+    >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
           size={"md"}
@@ -90,6 +113,8 @@ const Navbar = () => {
               children={<FaSearch />}
             />
             <Input
+              // value={query}
+              onChange={handleChange}
               variant="unstyled"
               p={"3"}
               border={"1px solid gray"}
@@ -98,6 +123,10 @@ const Navbar = () => {
               placeholder="Find fresh vegitable, fruits and dairy..."
             />
           </InputGroup>
+
+          {/* <Box zIndex="100" textAlign="center" pl="5rem">
+            Abckdnlsdkn
+          </Box> */}
         </Flex>
 
         <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
@@ -111,7 +140,7 @@ const Navbar = () => {
             }}
             as={ReachLink}
             to="/cart"
-          >  
+          >
             <Icon as={BsCart3} mr={3} />
             Cart
           </Link>
@@ -158,8 +187,6 @@ const Navbar = () => {
           </Stack>
         </Box>
       ) : null}
-
-      <Filter2/>
     </Box>
   );
 };

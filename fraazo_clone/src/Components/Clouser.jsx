@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Clouser.css";
+// import "./Clouser.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getFruitsData } from "../Redux/AppReducer/action";
 import { Box, Button, Icon, Text, Tooltip } from "@chakra-ui/react";
@@ -47,6 +47,7 @@ const Clouser = () => {
                     {quantity} {"  "}
                     {quantity2 && (
                       <Tooltip
+                        cursor="pointer"
                         ml={1}
                         label={quantity2}
                         aria-label="A tooltip"

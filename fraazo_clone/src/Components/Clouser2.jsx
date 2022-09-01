@@ -47,6 +47,7 @@ const Clouser2 = () => {
                     {quantity} {"  "}
                     {quantity2 && (
                       <Tooltip
+                        cursor="pointer"
                         ml={1}
                         label={quantity2}
                         aria-label="A tooltip"

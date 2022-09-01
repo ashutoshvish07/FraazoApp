@@ -7,15 +7,19 @@ import {
   Flex,
   Heading,
   Image,
+  Input,
+  InputGroup,
+  InputLeftAddon,
   Text,
   VStack,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { BsCartPlus } from "react-icons/bs";
 import Clouser from "../Components/Clouser";
 import Clouser2 from "../Components/Clouser2";
 const Home = () => {
   return (
-    <Box w={"90%"} m="auto">
+    <Box w={["90%", "80%"]} m="auto">
       {/* Hero section Start*/}
       <Flex gap="1.5rem" w={"100%"} m="auto" mt="1rem">
         <Box w={"68%"}>
@@ -145,7 +149,7 @@ const Home = () => {
             cursor="pointer"
             transition="1s easy"
           >
-            (View All)
+            <Link to="/fruits">(View All)</Link>
           </Text>
         </Flex>
         <Divider orientation="horizontal" backgroundColor="gray.400" />
@@ -164,7 +168,7 @@ const Home = () => {
             cursor="pointer"
             transition="1s easy"
           >
-            (View All)
+            <Link to="/single">(View All)</Link>
           </Text>
         </Flex>
         <Divider orientation="horizontal" backgroundColor="gray.400" />
@@ -175,7 +179,7 @@ const Home = () => {
       {/* Vegitable section ends*/}
 
       {/* Dowmload the app Start  */}
-      <Flex mt="15rem" justifyContent="space-between">
+      <Flex mt="15rem">
         <Box w="50%">
           <Image
             w="90%"
@@ -183,7 +187,70 @@ const Home = () => {
           />
         </Box>
         <Box>
-          <Heading>Download The App</Heading>
+          <Heading fontWeight="500" pl="3rem">
+            Download The App
+          </Heading>
+          <Text w="80%" pl="3rem" fontSize="lg" pt={"1.7rem"} fontWeight="400">
+            Enter your phone number to receive a text with a link to download
+            the app
+          </Text>
+
+          <Flex border="1px solid gray" p=".8rem" w="50%" ml="3rem" mt="4rem">
+            <Flex cursor="pointer">
+              <Image
+                w="20px"
+                h="20px"
+                src="https://webasset.fraazo.com/production/playstore-black.7aefac9587fdf1325286.png"
+                alt="android"
+              />
+              <Text>Android</Text>
+            </Flex>
+            <Flex cursor="pointer">
+              <Image
+                w="20px"
+                h="20px"
+                src="https://webasset.fraazo.com/production/apple-white.22e742c5b7c5e44bcd06.png"
+                alt="android"
+              />
+              <Text>IPhone</Text>
+            </Flex>
+          </Flex>
+          <InputGroup pl="3rem" mt="1.5rem" w="90%" border="lg">
+            <InputLeftAddon p={"2rem"} children="+91" bg="white" />
+            <Input p={"2rem"} type="tel" placeholder="Enter Mobile Number" />
+          </InputGroup>
+          <Box pl="3rem" mt="1.5rem">
+            <Button
+              bg="#5dc6ad"
+              color="white"
+              w="90%"
+              m="auto"
+              p="2rem"
+              fontWeight="normal"
+              fontSize={"1.5rem"}
+              _hover={{ backgroundColor: "#2dc6ad" }}
+            >
+              Submit
+            </Button>
+          </Box>
+
+          <Flex pl={"3rem"} mt="4rem" alignItems="center">
+            <Box fontSize="1.2rem" color="gray.500">
+              Available on
+            </Box>
+            <Box ml="1rem">
+              <Image
+                src="https://webasset.fraazo.com/production/googleplaystore.863bf06a3d2d326a5b94.png"
+                alt="play Store"
+              />
+            </Box>
+            <Box>
+              <Image
+                src="https://webasset.fraazo.com/production/appstore.a8155c5772ea7d80d435.png"
+                alt="Apple Store"
+              />
+            </Box>
+          </Flex>
         </Box>
       </Flex>
       {/* Dowmload the app End  */}
