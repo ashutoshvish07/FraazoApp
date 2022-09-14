@@ -17,15 +17,17 @@ import { Link } from "react-router-dom";
 import { BsCartPlus } from "react-icons/bs";
 import Clouser from "../Components/Clouser";
 import Clouser2 from "../Components/Clouser2";
+import android from "../assets/AndroidStore.png"
+import iphone from "../assets/iphone.png"
 const Home = () => {
   return (
-    <Box w={["90%", "80%"]} m="auto">
+    <Box w={["90%", "80%"]} m="auto" my="5rem">
       {/* Hero section Start*/}
-      <Flex gap="1.5rem" w={"100%"} m="auto" mt="1rem">
-        <Box w={"68%"}>
+      <Flex gap="1.5rem" w={"100%"} m="auto" mt="1rem"  direction={{ base: 'column', md: 'row' }}>
+        <Box w={{base: '100%', md: '68%'}} >
           <Image src="https://imageprod.fraazo.com/fraazo-prod/web_ban/2562.png" />
         </Box>
-        <Box w={"33%"} pt="1rem">
+        <Box w={{base: '100%', md: '33%'}} pt="1rem">
           <VStack>
             <Box>
               <Image src="https://webasset.fraazo.com/production/Web1.ab035db9ab9fe7b21326.png" />
@@ -45,9 +47,10 @@ const Home = () => {
         <Text fontSize={"4xl"}>Best Deals</Text>
         <Divider orientation="horizontal" backgroundColor="gray.400" />
 
-        <Flex alignItems={"left"} gap="1rem" mt="2rem">
+        <Flex alignItems={"left"} gap="1rem" mt="2rem" direction={{ base: 'column', md: 'row' }} >
           <Box border="1px solid   gray" borderRadius="md">
             <Image
+             w="100%"
               backgroundColor="gray.50"
               borderRadius="md"
               src="https://imagemaster.fraazo.com/fraazo-master/products/BONI11.png?width=256&height=256&format=webp"
@@ -82,6 +85,7 @@ const Home = () => {
           </Box>
           <Box border="1px solid gray" borderRadius="md">
             <Image
+             w="100%"
               backgroundColor="gray.50"
               borderRadius="md"
               src="https://imageprod.fraazo.com/fraazo-prod/images/images/000/006/605/original/data?width=300&height=256&format=webp"
@@ -121,7 +125,7 @@ const Home = () => {
 
       {/* Variety section Start*/}
 
-      <Flex justifyContent="center" gap="1rem" mt="5rem">
+      <Flex justifyContent="center" gap="1rem" mt="5rem" direction={{ base: 'column', md: 'row' }}>
         <Box>
           <Image
             h="280px"
@@ -179,8 +183,8 @@ const Home = () => {
       {/* Vegitable section ends*/}
 
       {/* Dowmload the app Start  */}
-      <Flex mt="15rem">
-        <Box w="50%">
+      <Flex mt="15rem" direction={{ base: 'column', md: 'row' }}>
+        <Box w={{base: '100%', md: '50%'}}>
           <Image
             w="90%"
             src="https://webasset.fraazo.com/production/app-screen.64b2c07bae4a9c5a4ec4.png"
@@ -195,24 +199,29 @@ const Home = () => {
             the app
           </Text>
 
-          <Flex border="1px solid gray" p=".8rem" w="50%" ml="3rem" mt="4rem">
-            <Flex cursor="pointer">
+          <Flex border="1px solid gray" p=".8rem" w="50%" ml="3rem" mt="4rem" rounded="lg">
+            <Flex cursor="pointer"
+              bg={"black"}
+              rounded="lg"
+              p={"0 30px"}
+              gap={2}
+              alignItems={"center"}
+              >
               <Image
-                w="20px"
-                h="20px"
-                src="https://webasset.fraazo.com/production/playstore-black.7aefac9587fdf1325286.png"
+                h='20px'
+                src={android}
                 alt="android"
               />
-              <Text>Android</Text>
+              <Text color='white'>Android</Text>
             </Flex>
             <Flex cursor="pointer">
               <Image
-                w="20px"
+
                 h="20px"
-                src="https://webasset.fraazo.com/production/apple-white.22e742c5b7c5e44bcd06.png"
+                src={iphone}
                 alt="android"
               />
-              <Text>IPhone</Text>
+              <Text color='blackAlpha.800'>IPhone</Text>
             </Flex>
           </Flex>
           <InputGroup pl="3rem" mt="1.5rem" w="90%" border="lg">

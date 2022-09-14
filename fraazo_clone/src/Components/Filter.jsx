@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  Checkbox,
+  Input,
+} from "@chakra-ui/react";
 const Filter = () => {
   const [searchParams, setSearchparams] = useSearchParams();
   const initialGenreParams = searchParams.getAll("genre");
@@ -32,36 +41,55 @@ const Filter = () => {
   console.log(category);
 
   return (
-    <div>
-      <h3>Filter</h3>
-      <div>
-        <input
-          type="checkbox"
-          value="Daily Veggies"
-          defaultChecked={category.includes("Daily Veggies")}
-          onChange={handleGenreChange}
-        />
-        <label> Daily Veggies</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          value="Exotic Vegetables"
-          defaultChecked={category.includes("Exotic Vegetables")}
-          onChange={handleGenreChange}
-        />
-        <label> Exotic Vegetables</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          value="Herbs & Leafies"
-          defaultChecked={category.includes("Herbs & Leafies")}
-          onChange={handleGenreChange}
-        />
-        <label>Herbs & Leafies</label>
-      </div>
-    </div>
+    <Accordion allowMultiple w={"90%"}>
+      <AccordionItem>
+        <h2>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              Vegitables
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel>
+          <Box>
+            <Checkbox
+              type="checkbox"
+              colorScheme="green"
+              value="Daily Veggies"
+              defaultChecked={category.includes("Daily Veggies")}
+              onChange={handleGenreChange}
+            >
+              Daily Veggies
+            </Checkbox>
+          </Box>
+          <Box>
+            <Checkbox
+              type="checkbox"
+              colorScheme="green"
+              value="Exotic Vegetables"
+              defaultChecked={category.includes("Exotic Vegetables")}
+              onChange={handleGenreChange}
+            >
+              {" "}
+              Exotic Vegetables{" "}
+            </Checkbox>
+          </Box>
+          <Box>
+            <Checkbox
+              colorScheme="green"
+              type="checkbox"
+              value="Herbs & Leafies"
+              defaultChecked={category.includes("Herbs & Leafies")}
+              onChange={handleGenreChange}
+            >
+              {" "}
+              Herbs & Leafies
+            </Checkbox>
+          </Box>
+        </AccordionPanel>
+      </AccordionItem>
+    </Accordion>
   );
 };
 

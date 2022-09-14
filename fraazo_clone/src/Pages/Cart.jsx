@@ -1,10 +1,11 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 const Cart = () => {
   return (
-    <div>
+    <Box my="6rem">
     cart page
-    </div>
+    </Box>
   )
 }
 

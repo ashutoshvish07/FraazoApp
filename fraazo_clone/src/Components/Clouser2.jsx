@@ -6,6 +6,7 @@ import { Box, Button, Icon, Text, Tooltip } from "@chakra-ui/react";
 import { BsCartPlus, BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 import { FaRupeeSign } from "react-icons/fa";
 import { InfoIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 const Clouser2 = () => {
   const dispatch = useDispatch();
   const ProductsData = useSelector((store) => store.vegitable);
@@ -27,7 +28,7 @@ const Clouser2 = () => {
     carouser.current.scrollLeft += carouser.current.offsetWidth;
   };
   if (!ProductsData || !ProductsData.length) return null;
-  console.log("ProductsData", ProductsData);
+  // console.log("ProductsData", ProductsData);
 
   return (
     <div className="container">
@@ -36,7 +37,10 @@ const Clouser2 = () => {
           ({ id, name, price, image, quantity, quantity2 }, index) => (
             <div key={id} className="item">
               <div className="image">
+               <Link to={`/product/${id}`} >
+
                 <img src={image} alt={name} />
+               </Link>
               </div>
               <Text fontSize="1xl" pt="0.6rem">
                 {name}

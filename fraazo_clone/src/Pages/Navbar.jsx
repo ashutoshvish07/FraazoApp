@@ -24,7 +24,8 @@ import { BsCart3, BsCreditCard } from "react-icons/bs";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link as ReachLink } from "react-router-dom";
-import Filter2 from "../Components/Filter2";
+import { useAuth0 } from "@auth0/auth0-react";
+
 import { useDispatch } from "react-redux";
 import {
   getFruitsData,
@@ -35,7 +36,7 @@ import {
 const Links = [
   {
     id: 1,
-    title: "Card",
+    title: "Cart",
     to: "/cart",
   },
   {
@@ -46,13 +47,12 @@ const Links = [
   {
     id: 3,
     title: "Login",
-    to: "/login",
   },
 ];
 
 const Navbar = () => {
   const dispatch = useDispatch();
-
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   const [query, setQuery] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -62,13 +62,18 @@ const Navbar = () => {
     // dispatch(QueryVegitableData(query));
   };
 
-  console.log(query);
+  // console.log(query);
   return (
     <Box
-      bg={useColorModeValue("white.100", "gray.900")}
+      bg="white"
       px={4}
       py={2}
-      className="Navbar_sticly"
+      w="full"
+      overflowY="hidden"
+      // borderBottomWidth={2}
+      position="fixed"
+      top={0}
+      zIndex={100}
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
@@ -158,21 +163,17 @@ const Navbar = () => {
             <Icon as={BsCreditCard} mr={3} />
             Credits
           </Link>
+           
 
-          <Link
-            px={2}
-            py={1}
-            rounded={"md"}
-            _hover={{
-              textDecoration: "none",
-              bg: useColorModeValue("gray.200", "gray.700"),
-            }}
-            as={ReachLink}
-            to="/login"
-          >
-            <Icon as={FaUser} mr={3} />
-            Login
-          </Link>
+          {isAuthenticated ? (
+             <p>{user.name}</p>
+          ) : (
+            <Link>
+              <Button leftIcon={<FaUser />} onClick={() => loginWithRedirect()}>
+              Log In
+              </Button>
+            </Link>
+          )}
         </HStack>
       </Flex>
 

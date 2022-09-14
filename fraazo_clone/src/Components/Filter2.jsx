@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import Filter from "./Filter";
+
 
 const Filter2 = () => {
   const [searchParams, setSearchparams] = useSearchParams();
@@ -57,7 +57,7 @@ const Filter2 = () => {
           <Box>
             <Checkbox
               type="checkbox"
-              colorScheme="green"
+               colorScheme="green"
               value="fresh"
               defaultChecked={category.includes("fresh")}
               onChange={handleGenreChange}

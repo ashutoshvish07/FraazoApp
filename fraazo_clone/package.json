@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ajna/pagination": "^1.4.19",
+    "@auth0/auth0-react": "^1.10.2",
     "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.2.8",
     "@react-icons/all-files": "^4.1.0",
